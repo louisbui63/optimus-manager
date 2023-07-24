@@ -1,9 +1,11 @@
-optimus-manager
+optimus-manager for Debian
 ==================
 
-This fork is a port of optimus-manager for debian. Run install.sh and prey.
+This fork is a port of optimus-manager for debian. Run `sudo install.sh` and prey.
+you might need `python3-installer` and `python3-build` packages for build, as well as others.
 Bellow is the original readme.
 
+optimus-manager
 ==================
 
 This Linux program provides a solution for GPU switching on Optimus laptops (i.e laptops with a dual Nvidia/Intel or Nvidia/AMD configuration).
