@@ -1,6 +1,11 @@
 optimus-manager
 ==================
 
+This fork is a port of optimus-manager for debian. Run install.sh and prey.
+Bellow is the original readme.
+
+==================
+
 This Linux program provides a solution for GPU switching on Optimus laptops (i.e laptops with a dual Nvidia/Intel or Nvidia/AMD configuration).
 
 Obviously this is unofficial, I am not affiliated with Nvidia in any way.
