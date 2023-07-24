@@ -243,7 +243,7 @@ def _load_module(available_modules, module, options=None):
             " Is the corresponding package installed ?" % module)
     try:
         subprocess.check_call(
-            f"modprobe {module} {' '.join(options)}",
+            f"/sbin/modprobe {module} {' '.join(options)}",
             shell=True, text=True, stderr=subprocess.PIPE, stdout=subprocess.DEVNULL)
     except subprocess.CalledProcessError as e:
         raise KernelSetupError(f"Error running modprobe for {module}: {e.stderr}") from e
@@ -267,7 +267,7 @@ def _unload_modules(available_modules, modules_list):
         try:
             # We use "modprobe -r" because unlike "rmmod", it does not return an error if the module is not loaded.
             subprocess.check_call(
-                f"modprobe -r {' '.join(modules_to_unload)}",
+                f"/sbin/modprobe -r {' '.join(modules_to_unload)}",
                 shell=True, text=True, stderr=subprocess.PIPE, stdout=subprocess.DEVNULL)
 
         except subprocess.CalledProcessError as e:
