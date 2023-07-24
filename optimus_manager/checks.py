@@ -57,7 +57,7 @@ def get_active_renderer():
 def is_module_available(module_name):
 
     return subprocess.run(
-        f"modinfo -n {module_name}",
+        f"/sbin/modinfo -n {module_name}",
         shell=True, stdout=subprocess.DEVNULL
     ).returncode == 0
 
