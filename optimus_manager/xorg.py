@@ -249,6 +249,7 @@ def _make_modules_paths_section():
            "\tModulePath \"/usr/lib64/nvidia/xorg/modules\"\n" \
            "\tModulePath \"/usr/lib64/nvidia/xorg\"\n" \
            "\tModulePath \"/usr/lib64/xorg/modules\"\n" \
+           "\tModulePath \"/usr/lib/xorg/modules\"\n" \
            "EndSection\n\n"
 
 
