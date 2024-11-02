@@ -1,7 +1,7 @@
 optimus-manager for Debian
 ==================
 
-This fork is a port of optimus-manager for debian. Run `sudo install.sh` and prey.
+This fork is a port of optimus-manager for debian. Run `sudo install.sh` and pray.
 you might need `python3-installer` and `python3-build` packages for build, as well as others.
 Bellow is the original readme.
 
